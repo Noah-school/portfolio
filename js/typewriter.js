@@ -1,6 +1,6 @@
 const typeFont = document.querySelectorAll(".tf");
 const tfContainers = document.querySelectorAll(".tfcontainer");
-const letters = "ABCDEFGHIJKLMNOPRSTUVWXYZ";
+const letters = "ABCDEFGHIJKLMNOPRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 const delay = 5;
 
 window.onload = () => {
