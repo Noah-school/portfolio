@@ -4,34 +4,34 @@
     "url": "https://github.com/Noah-school/improved-catmap",
     "status": "completed",
     "category": "Security",
-    "image": "/img/projects/catmap.png"
+    "image": "/img/projects/catmap.jpg"
   },
   {
     "title": "AP-Terra",
     "url": "https://apterra.be",
     "status": "in-progress",
     "category": "Internationaal",
-    "image": "/img/projects/apterra.png"
+    "image": "/img/projects/apterra.jpg"
   },
   {
     "title": "Provis",
     "url": "https://github.com/Noah-school/proxvis",
     "status": "in-progress",
     "category": "Server",
-    "image": "/img/projects/provis.png"
+    "image": "/img/projects/provis.jpg"
   },
   {
     "title": "SASE",
     "url": "",
     "status": "in-progress",
     "category": "Server",
-    "image": "/img/projects/sase.png"
+    "image": "/img/projects/sase.jpg"
   },
   {
     "title": "The things Network sniffer",
     "url": "",
     "status": "in-progress",
     "category": "IOT",
-    "image": "/img/projects/ttn.png"
+    "image": "/img/projects/ttn.jpg"
   }
 ]
