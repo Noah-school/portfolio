@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <button class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav-menu" id="navMenu">
+          <a href="#hero" class="nav-link">HOME</a>
+          <a href="#projects" class="nav-link">PROJECTS</a>
+          <a href="#about" class="nav-link">ABOUT</a>
+          <a href="#contact" class="nav-link">CONTACT</a>
+        </div>
+      </div>
+    </nav>
+    <section id="hero" class="hero">
+      <div class="hero-content">
+        <h1 class="tf tfcontainer hero-title " data-value='["Noah Verstraeten"]'>Noah Verstraeten</h1>
+        <p class="hero-subtitle">Cybersecurity student & networking enthusiast</p>
+        <p class="hero-description">Making the internet safer with rules</p>
+        <button class="hero-button" onclick="document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })">EXPLORE MY WORK</button>
+      </div>
+    </section>
+    <section id="projects">
+      <h1 class="tf tfcontainer projects-title" data-value='["PROJECTS"]'>PROJECTS</h1>
+
+      <div id="loading-spinner" class="loading-spinner">
+        <div class="spinner"></div>
+      </div>
+
+      <div class="main-wrapper">
+        <button class="filter-toggle" id="filterToggle">FILTERS ▶</button>
+        <div class="filter-container collapsed" id="filterContainer">
+          <div class="filter-group">
+            <label class="filter-label">STATUS</label>
+            <div class="filter-options" id="status-filters"></div>
+          </div>
+
+          <div class="filter-group">
+            <label class="filter-label">CATEGORY</label>
+            <div class="filter-options" id="category-filters"></div>
+          </div>
+
+          <div class="filter-group">
+            <label class="filter-label">SEARCH</label>
+            <input
+              type="text"
+              id="search-input"
+              class="search-input"
+              placeholder="Project name..."
+            />
+          </div>
+
+          <button class="reset-button" onclick="resetFilters()">RESET</button>
+        </div>
+
+        <div class="stack-container" id="stack"></div>
+        <div class="dots-container" id="dots-container"></div>
+        <button class="next-button" onclick="moveLeft()">NEXT</button>
+    </section>
+        <section id="about" class="about">
+      <h2 class="tf tfcontainer section-title" data-value='["ABOUT ME"]'>ABOUT ME</h2>
+      <div class="about-content">
+        <p>I'm passionate networking and building projects that last for example cloud, security, and IoT. I enjoy automating tasks that solve real-world problems.</p>
+        <p>My work spans across multiple domains including server infrastructure, international platforms, and security systems. I'm constantly learning and exploring new technologies to stay at the forefront of development.</p>
+        <div class="skills-grid">
+          <div class="skill-item">
+            <span class="skill-label">FRONTEND</span>
+            <span class="skill-value">React, angular</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-label">BACKEND</span>
+            <span class="skill-value">Python, Bash, Golang</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-label">Cloud</span>
+            <span class="skill-value">Micrsoft azure, Fortigate, Vsphere</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-label">Server</span>
+            <span class="skill-value">Cisco, Proxmox, Windows server, linux</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-label">DEVOPS</span>
+            <span class="skill-value">Git, Docker, K8S, <br> Jankins pipeline</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-label">Security</span>
+            <span class="skill-value">OSINT, ethical hacking, network hardening</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact">
+      <h2 class="tf tfcontainer section-title" data-value='["CONTACT"]'>CONTACT</h2>
+      <div class="contact-content">
+        <p class="contact-intro">Im always ready to learn new things. Get in touch with me through any of these channels.</p>
+        <div class="contact-links">
+          <a href="mailto:vnoah0506@gmail.com" class="contact-link">
+            <span class="contact-icon"><img src="img/email.png" alt="" width="40px" height="auto"></span>
+            <span class="contact-text">EMAIL</span>
+          </a>
+          <a href="https://github.com/noah-school" target="_blank" class="contact-link">
+            <span class="contact-icon"><img src="img/github.png" alt="" width="50px" height="auto"></span>
+            <span class="contact-text">GITHUB</span>
+          </a>
+          <a href="https://www.linkedin.com/in/noah-verstraeten-baab96248" target="_blank" class="contact-link">
+            <span class="contact-icon"><img src="img/linkedin.png" alt="" width="40px" height="auto"></span>
+            <span class="contact-text">LINKEDIN</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div id="blob"></div>
+
+    <script src="js/typewriter.js"></script>
+    <script src="js/blob.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

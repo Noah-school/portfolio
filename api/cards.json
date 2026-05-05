@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Catmap",
+    "url": "https://github.com/Noah-school/improved-catmap",
+    "status": "completed",
+    "category": "Security",
+    "image": "https://picsum.photos/300/150?random=1"
+  },
+  {
+    "title": "AP-Terra",
+    "url": "https://apterra.be",
+    "status": "in-progress",
+    "category": "Internationaal",
+    "image": "https://picsum.photos/300/150?random=2"
+  },
+  {
+    "title": "Provis",
+    "url": "https://github.com/Noah-school/proxvis",
+    "status": "in-progress",
+    "category": "Server",
+    "image": "https://picsum.photos/300/150?random=3"
+  },
+  {
+    "title": "SASE",
+    "url": "",
+    "status": "in-progress",
+    "category": "Server",
+    "image": "https://picsum.photos/300/150?random=4"
+  },
+  {
+    "title": "The things Network sniffer",
+    "url": "",
+    "status": "in-progress",
+    "category": "IOT",
+    "image": "https://picsum.photos/300/150?random=5"
+  }
+]
