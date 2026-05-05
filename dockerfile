@@ -1,19 +1,12 @@
-FROM node:25-alpine3.22 AS build
-
-WORKDIR /app
-
-COPY package*.json ./
-
-RUN npm install
-
-COPY . .
-
-RUN npm run build
-
 FROM nginx:alpine
 
-COPY --from=build /app/dist /usr/share/nginx/html
-COPY stl /usr/share/nginx/html/stl
+WORKDIR /usr/share/nginx/html
+
+COPY index.html ./
+COPY css ./css
+COPY js ./js
+COPY api ./api
+COPY img ./img
 
 EXPOSE 80
 
